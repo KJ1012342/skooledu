@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skool.edu</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 80px;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p{
+            text-align: center;
+            font-size: 40px;
+            color: grey;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body {
+            background: midnightblue;
+            color: white;
+        }
+         /* --- game grid layout --- */
+        .games {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        justify-items: center;
+        }
+
+        /* --- game box --- */
+        .game {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: tan;
+        border: 3px solid darkgray;
+        overflow: hidden;
+        }
+
+        /* --- game image --- */
+        .game img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        }
+
+        /* --- Hover overlay with cart emoji --- */
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.4);
+          color: white;
+          font-size: 20px;
+          text-align: center;
+          font-family: 'Courier New', Courier, monospace;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: 0.2s;
+          cursor: pointer;
+        }
+        .game:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">Welcome to Skool!</h1>
+    <p class="p">Brought to you by You-Know-Who</p>
+    <div class="games">
+        <div class="game">
+            <a href="games/1v1.lol.html">
+                <img src="icons/1v1.lol.jpg" alt="1v1lol">
+                <div class="overlay">Off-Brand Fortnite</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/baseball-bros.html">
+                <img src="icons/baseball-bros.jpg" alt="baseball-bros">
+                <div class="overlay">Baseball Bros</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/basket-bros.html">
+                <img src="icons/basket-bros.jpg" alt="basket-bros">
+                <div class="overlay">Basket Bros</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/doodle-jump.html">
+                <img src="icons/doodle-jump.jpg" alt="doodle-jump">
+                <div class="overlay">Doodle Jump</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/drift-boss.htm">
+                <img src="icons/drift-boss.jpg" alt="drift-boss">
+                <div class="overlay">Drift Boss</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/fireboy-and-watergirl.html">
+                <img src="icons/fireboy-and-watergirl.jpg" alt="fireboy-and-watergirl">
+                <div class="overlay">Fireboy and Watergirl</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/geometry-dash-lite.html">
+                <img src="icons/geometry-dash-lite.jpg" alt="geometry-dash-lite">
+                <div class="overlay">Geometry Dash [LITE]</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/moto-x3m.htm">
+                <img src="icons/moto-x3m.jpg" alt="moto-x3m">
+                <div class="overlay">Moto X3M</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/ovo.html">
+                <img src="icons/ovo.png" alt="ovo">
+                <div class="overlay">OvO</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/soccer-bros.html">
+                <img src="icons/soccer-bros.jpg" alt="soccer-bros">
+                <div class="overlay">Soccer Bros</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="https://s3.amazonaws.com/strawberrii/index.html">
+                <img src="icons/cherri.png" alt="straw">
+                <div class="overlay">Browser in a Browser</div>
+            </a>
+        </div>
+        <div class="game">
+            <a href="games/we-become-what-we-behold.html">
+                <img src="icons/we-become-what-we-behold.jpg" alt="we-become-what-we-behold">
+                <div class="overlay">We Become What We Behold</div>
+            </a>
+        </div>
+    </div>
+
+    <p class="p">More games coming soon...</p>
+</body>
+</html>
