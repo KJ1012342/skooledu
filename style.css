@@ -1,66 +1,66 @@
 h1{
-            text-align: center;
-            font-size: 80px;
-            color: black;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        p{
-            text-align: center;
-            font-size: 40px;
-            color: grey;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        body {
-            background: midnightblue;
-            color: white;
-        }
-         /* --- game grid layout --- */
-        .games {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 10px;
-        justify-items: center;
-        }
+    text-align: center;
+    font-size: 80px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background: midnightblue;
+    color: white;
+}
+/* --- game grid layout --- */
+.games {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
 
-        /* --- game box --- */
-        .game {
-        position: relative;
-        width: 100px;
-        height: 100px;
-        background-color: tan;
-        border: 3px solid darkgray;
-        overflow: hidden;
-        }
+/* --- game box --- */
+.game {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: tan;
+    border: 3px solid darkgray;
+    overflow: hidden;
+}
 
-        /* --- game image --- */
-        .game img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 5px;
-        }
+/* --- game image --- */
+.game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
 
-        /* --- Hover overlay with cart emoji --- */
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0,0,0,0.4);
-          color: white;
-          font-size: 20px;
-          text-align: center;
-          font-family: 'Courier New', Courier, monospace;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          opacity: 0;
-          transition: 0.2s;
-          cursor: pointer;
-          font-weight: bold;
-        }
-        .game:hover .overlay {
-            opacity: 1;
-        }
+/* --- Hover overlay with cart emoji --- */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+}
+.game:hover .overlay {
+    opacity: 1;
+}
